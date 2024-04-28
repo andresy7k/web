@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {  
+  background-color: #ffffff;
+  color: #fff;
+  padding: -200px;
+  top: 30px;
+  text-align: center;
+  margin: 0 auto;
+} 
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+main {
+  padding: 10px;
+}
+
+.seccion-principal {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.img-stat{
+  background: url(../img/estadisticas\ \(2\).png);
+  object-fit: contain;
+
+}
+
+.seccion-secundaria {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.lista-datos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-datos li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lista-datos li .icono {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-stat {
+  background: url(img/estadisticas\ \(2\).png);
+  width: 200px;
+  height: 200px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
