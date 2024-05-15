@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETsafe - Prevención de ETS</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETSafe</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="js/inicio.js"></script>
 </head>
 <body>
-  <header>
-    <h1>ETsafe - Prevención de ETS</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#estadisticas">Estadísticas</a></li>
-      <li><a href="#centros-salud">Centros de Salud más Cercanos</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="estadisticas">
-      <h2>Estadísticas sobre ETS</h2>
-      <div id="estadisticas-container">
-        <!-- Aquí se cargarán las estadísticas dinámicamente con JavaScript -->
-      </div>
-    </section>
-
-    <section id="centros-salud">
-      <h2>Centros de Salud más Cercanos</h2>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 ETsafe - Prevención de ETS</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <header>
+        <div class="header-content">
+            <img src="img/ETsafe.png" alt="Logo de la empresa" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="estadisticas.html">Estadísticas</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                    <li><a href="hospitales.html">Hospitales</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="tabla-enfermedades">
+            <h2>Enfermedades y condiciones relacionadas</h2>
+            <ul>
+                <li>VIH / SIDA <img src="img/VIH.png" alt="VIH"></li>
+                <li>Herpes Genital <img src="img/herpes.png" alt="Herpes"></li>
+                <li>Papiloma Humano <img src="img/papilomna.png" alt="Papiloma"></li>
+                <li>Sifilis <img src="img/sifilis.png" alt="Sifilis"></li>
+                <li>STDs e infertilidad <img src="img/embarazo.png" alt="Infertilidad"></li>
+                <li>Bacterias vaginales <img src="img/bacterias_vaginales.png" alt="Infecciones"></li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                <img src="img/stats.png" alt="Estadísticas y datos">
+                <p> Estadisticas y datos que debes conocer </p>
+                <a href="estadisticas.html">Conoce más</a>
+            </div>
+            <div>
+                <img src="img/008-map.png" alt="Centros de salud cercanos">
+                <p> Centros de salud cercanos a tu ubicación </p>
+                <a href="CentrosdeSalud.html">Conoce más</a>
+            </div>
+            <div>
+                <img src="img/foro%203.png" alt="Foro">
+                <p> Interactua en el foro con otros usuarios </p>
+                <a href="foro.html">Conoce más</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2024 ETSafe</p>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="aviso_legal.html">Aviso Legal</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

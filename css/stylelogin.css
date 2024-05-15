@@ -1,0 +1,61 @@
+/* Estilos para el contenedor del formulario */
+.login-container {
+    position: absolute;
+    top: 50%;
+    right: 500px;
+    transform: translateY(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(250, 107, 231, 1000), -5px -5px 10px rgba(250, 107, 231, 1000);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Dejavu", sans-serif;
+    
+    
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Estilos para el formulario de inicio de sesión */
+#loginForm {
+    text-align: center;
+}
+#loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #fa6be7;
+    box-sizing: border-box;
+    font-family: "Dejavu", sans-serif;
+
+}
+#loginForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fa6be7;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+#loginForm button:hover {
+    background-color: #3700ff;
+}
+body{
+    background-color: #000000;
+}
