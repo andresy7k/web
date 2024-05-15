@@ -1,0 +1,146 @@
+/* Estilos Generales */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Cabecera*/
+header {
+    background-color: white;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-login {
+    background-color: #c390c3;
+    color: white;
+    padding: 10px 20px;
+    border: 1px ;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Cuerpo */
+main {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+
+/* Box de enfermedades */
+.tabla-enfermedades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+}
+.tabla-enfermedades ul {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes the default padding */
+}
+
+.tabla-enfermedades ul li {
+    flex: 0 0 30%; /* Each item will take up 30% of the available width */
+    margin-bottom: 10px; /* Adds some spacing between enfermedades */
+}
+
+.tabla-enfermedades ul li img {
+    float: left; /* Positions the image to the left */
+    width: 25px;
+    height: auto;
+}
+
+/* Boxes */
+section > div {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-right: 2.1%;
+    background: #fff; /* Fondo blanco para mejor contraste */
+    padding: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1); /* Sombra suave para resaltar los bloques */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+section > div p {
+    color: #666; /* Color de texto más suave */
+    font-size: 14px; /* Tamaño de texto adecuado */
+    margin-top: 15px; /* Espacio después de la imagen */
+    margin-bottom: 15px; /* Espacio antes del enlace */
+}
+
+section > div:last-child {
+    margin-right: 0; /* Remueve el margen del último elemento */
+}
+
+section > div a {
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    background-color: #c390c3;
+    color: white;
+    padding: 5px 8px;
+    border: 1px ;
+    border-radius: 4px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
