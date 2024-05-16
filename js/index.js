@@ -1,18 +1,24 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Auth0Provider } from '@auth0/auth0-react';
-import App from './App';
+console.log('El archivo JS está correctamente conectado.');
 
-const root = createRoot(document.getElementById('root'));
+const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+})
+searchBtn.addEventListener("click", () => {
+    sidebar.classList.remove("close");
+})
+modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+    } else {
+        modeText.innerText = "Dark mode";
+    }
+});
 
-root.render(
-<Auth0Provider
-    domain="dev-zvrzl27svtw3hjsj.us.auth0.com"
-    clientId="Sy3hX1yvot614sCZ5HrIHTj1wlMcGKcY"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }}
-  >
-    <App />
-  </Auth0Provider>,
-);
+

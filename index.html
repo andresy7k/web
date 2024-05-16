@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETsafe</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETSafe</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <script src="//code.tidio.co/bvksnjyc1390vrge1fdsf5xs8oz8857s.js" async></script>
 </head>
 <body>
     <header>
-      <img src="img/ETsafe.png" alt="Logo ETSAFE">
-      <h1>ETsafe</h1>
-      <nav>
-        <ul class="contenido-menu"> 
-          <li><a href="#"><strong>Inicio</strong></a></li>
-          <li><a href="#" id="encabezado-stats" class="stats"><strong>Estadisticas y datos</strong></a></li>
-          <li><a href="#" id="encabezado-centrosdesld" class="centrosdesld"><strong> Centros de salud más cercanos</strong></a></li>
-          <li><a href="#" id="encabezado-foros"><strong>Foros y comunidad</strong></a></li>
-          <li><a href="#" id="encabezado-login"><strong>iniciar Sesión</strong></a></li>
-          <li>
-          </li> 
-        </ul>
-      </nav>
+        <div class="header-content">
+            <img src="img/ETsafe.png" alt="Logo de la empresa" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="estadisticas.html">Estadísticas</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                    <li><a href="./CentrosdeSalud.html">Hospitales</a></li>
+                    <li><a href="./Componentes/Login Register/LoginR.jsx" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-  <main>
-    <div class="recuadro">
-      <img src="img/bienvenida.png" alt="Bienvenida" class="imagen-vertical">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-      <h1 class="titulo-paralelo">Bienvenido a ETsafe</h1>
-      <p class="texto-paralelo"> ETsafe es un proyecto orientado a guiarte en tu 
-        camino al autoconocimiento de tu salud sexual.</p>
-    </div>
-    <div class="informacion">
-      <h2>¿Qué encontrarás en nuestra página web?</h2>
-      <ul>
-        <li>
-          <div class="recuadro3">
-              <img src="img/maps.png" alt="Imagen maps" class="maps-img"> 
-              <h3 class="texto-maps"><strong>Conoce los centros de <br>salud más cercanos a tu <br>ubicación</strong> </h3>
-              <p class="parrafo-maps">En esta sección podrás conocer los centros de 
-                salud más cerca a ti y conocer su sitio web.</p>
-              <button id="boton-conocer-mas-maps" class="boton-maps">Conoce Más</button> 
-               
-          </div>  
-        </li>
-        <li>
-          <div class="recuadro2">
-            <img src="img/estadisticas (2).png" alt="Imagen estadisticas" class="estadisticas-img">
-            <h3 class="texto-stats">Estadisticas y datos que <br>debes conocer</h3>
-            <p class="parrafo-stats">En esta sección podrás encontrar<br> muchos datos 
-              interesantes que te<br> ayudarán a ampliar tu conocimiento <br> de las ETS</p>
-            <button id="boton-conocer-mas-stats" class="boton-stats">Conoce Más</button> 
-          </div>    
-          </a>
-        </li>
-        <li>
-          <div class="recuadro4">
-            <img src="img/foro.png" alt="Imagen foros" class="foros-img">
-            <h3 class="texto-foro">¡Interactúa con otros usuarios en <br>nuestro foro!</h3>
-            <p class="parrafo-foro">En esta sección podrás encontrar temas de conversación que quizás sean de tu interés, 
-              comparte tus experiencias y conocimientos!
-            <button id="boton-conocer-mas-foros" class="boton-foro">Conoce Más</button>  
-            </p>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <main>
+        <section class="tabla-enfermedades">
+            <h2>Enfermedades y condiciones relacionadas</h2>
+            <ul>
+                <li>VIH / SIDA <img src="img/VIH.png" alt="VIH"></li>
+                <li>Herpes Genital <img src="img/herpes.png" alt="Herpes"></li>
+                <li>Papiloma Humano <img src="img/papilomna.png" alt="Papiloma"></li>
+                <li>Sifilis <img src="img/sifilis.png" alt="Sifilis"></li>
+                <li>STDs e infertilidad <img src="img/embarazo.png" alt="Infertilidad"></li>
+                <li>Bacterias vaginales <img src="img/bacterias_vaginales.png" alt="Infecciones"></li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                <img src="img/stats.png" alt="Estadísticas y datos">
+                <p> Estadisticas y datos que debes conocer </p>
+                <a href="estadisticas.html">Conoce más</a>
+            </div>
+            <div>
+                <img src="img/008-map.png" alt="Centros de salud cercanos">
+                <p> Centros de salud cercanos a tu ubicación </p>
+                <a href="CentrosdeSalud.html">Conoce más</a>
+            </div>
+            <div>
+                <img src="img/foro%203.png" alt="Foro">
+                <p> Interactua en el foro con otros usuarios </p>
+                <a href="foro.html">Conoce más</a>
+            </div>
+        </section>
+    </main>
     <footer>
-      <div class="contenedor">
-        <p>COPYRIGTH &copy; 2024 ETsafe. Todos los derechos reservados.</p>
-        <ul class="enlaces">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Aviso legal</a></li>
-        </ul>
-      </div>
-    </footer> 
-    <script src="js/script.js"></script> 
+        <p>Derechos reservados &copy; 2024 ETSafe</p>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="aviso_legal.html">Aviso Legal</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <title>Geolocation</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centros de Salud Cercanos</title>
   <link rel="stylesheet" href="../etsafe prueba/css/CentrosdeSLD.css">
+  <link rel="stylesheet" href="./css/CentrosdeSLD.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
   <header>
@@ -24,6 +27,11 @@
   <footer>
     <p>COPYRIGTH &copy; 2024 ETsafe. Todos los derechos reservados.</p>
   </footer>
-  <script src="../etsafe prueba/js/CentrosdeSLD.js"></script>
+  <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAvUWaGOah7xPyUoGf24TkIEdKcxnDZkw&callback=initMap&v=weekly&solution_channel=GMP_CCS_geolocation_v1"
+      defer
+    ></script>
+  <script src="./js/CentrosdeSLD.js"></script>
 </body>
 </html>

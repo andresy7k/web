@@ -1,0 +1,333 @@
+.wrapper {
+    position: absolute;
+    left: 10%; 
+    transform: translateY(-30%); 
+    width: 80%; /* Reducir el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo */
+    height: 350px;
+    /* background: rgb(191, 96, 96); */
+    background: tra;
+    border: 2px solid rgba(225, 225, 225, .1);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(191, 96, 96);
+    color: #322d2d;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper.active {
+    height: 400px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px; /* Reducir el padding */
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    translate: -400px;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    translate: none;
+    translate: 400px;
+}
+
+.wrapper.active .form-box.register {
+    transition: translate .18s ease;
+    translate: 0;
+
+}
+
+form h1 {
+    font-size: 35px; /* Reducir el tamaño del título */
+    text-align: center;
+}
+
+form .input-box {
+    position: relative;
+    width: 100%;
+    height: 40px; /* Reducir la altura de los campos de entrada */
+    margin: 15px 0; /* Reducir el margen */
+}
+
+.input-box input {
+    width: calc(100% - 15px); /* Reducir el ancho del campo de entrada */
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(45, 43, 43, 0.212);
+    border-radius: 20px; /* Reducir el radio de borde */
+    font-size: 15px; /* Reducir el tamaño de la fuente */
+    color: #393636;
+    padding: 10px 20px; /* Reducir el padding */
+}
+
+.input-box input::placeholder {
+    color: #2e2a2a;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: -13px; /* Reducir la distancia desde el borde derecho */
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 18px; /* Reducir el tamaño del icono */
+}
+
+form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px; /* Reducir el tamaño del texto */
+    margin-top: 35px; /* Reducir el margen superior */
+}
+
+.remember-forgot label input {
+    accent-color: #222121;
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: #2e2a2a;;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 35px; /* Reducir la altura del botón */
+    background: #cb157692;
+    border: none;
+    outline: none;
+    border-radius: 20px; /* Reducir el radio de borde */
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1); /* Reducir la sombra */
+    cursor: pointer;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    color: #333;
+    font-weight: 700;
+}
+
+form .register-link {
+    font-size: 14px; /* Reducir el tamaño del texto */
+    text-align: center;
+    margin: 15px 0; /* Reducir el margen */
+}
+
+.register-link p a {
+    color: #2c2727;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+/* .social-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-700%);
+    color: #fff;
+} */
+
+.social-buttons {
+    position: absolute;
+    bottom: 35px;
+}
+
+.social-buttons button {
+    border: none;
+    background-color: transparent;
+    color: #1a1818;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.social-buttons.google {
+    left: 120px;
+}
+
+.social-buttons.facebook {
+    left: 420px;
+}
+.logo {
+    position: absolute;
+    top: -70px;
+    left: 200px;
+}
+.imagen {
+    position: absolute;
+    top: 180px;
+    left: 750px;
+}
+
+.subtitle {
+    font-family: Times New Roman , sans-serif;
+    position: absolute;
+    top: 180px; 
+    left: 175px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* -------------------------------------linea divisora de pagina------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper {
+    position: relative;
+    width: 420px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, .1)   ;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+
+}
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    translate: -400px;
+}
+.wrapper .form-box.register {
+    position: absolute;
+    translate: none;
+    translate: 400px;
+
+}
+
+.wrapper.active .form-box.register {
+    transition: translate .18s ease;
+    translate: 0;
+
+
+}
+
+form h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+form .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .1);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input ::placeholder {
+    color:#fff;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+
+}
+
+ form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+form .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}  
+ */
